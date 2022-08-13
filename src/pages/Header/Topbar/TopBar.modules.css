@@ -1,0 +1,35 @@
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #143258;
+}
+/***** Top Bar Icon *****/
+.top-bar div:nth-child(1){
+    margin-right: 10px;
+}
+/***** Top Bar Text *****/
+.top-bar div:nth-child(2) p{
+    color: #89bcda;
+    font-size: 13px;
+}
+
+.social-contact{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-contact ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.social-contact ul li a{
+    font-size: 20px;
+    color: #000000;
+}
+

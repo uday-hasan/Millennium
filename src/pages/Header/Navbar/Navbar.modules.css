@@ -1,0 +1,28 @@
+nav{
+    padding: 10px;
+    width: 100%;
+    background-color: #143258;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+nav ul li a{
+    text-decoration: none;
+    /* padding: 4px 0; */
+    border-bottom:2px solid #ffffff;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color:#048bfc ;
+    /* background-color: #048bfe; */
+    /* border-bottom: 5px solid #ffffff; */
+}

@@ -1,0 +1,13 @@
+.gallery{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 15px solid #ff9c00;
+}
+.gallery h1{
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #ff9c00;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 15px;
+}
