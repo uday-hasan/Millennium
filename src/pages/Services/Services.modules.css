@@ -37,36 +37,72 @@
 .icon{
     font-size: 22px;
 }
-.box-services{
+ .box-services{
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
     grid-gap: 0 20px;
     background-color: #143258;
     width: 100%;
     padding: 50px 20px;
+    width: 100%;
 }
+
 .box-container{
-    position: relative;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    border: solid;
+    padding: 80px 20px;
+    width: 100%;
+    border: 15px solid #e6ddce;
+    outline: 5px solid #cbbfaa;
+    position: relative;
 }
 .box{
-    width: 150px; 
-    height: 200px;
     margin-left: 10px;
     background-color: #143258;
-     border: 15px solid #e6ddce;
-    outline: 5px solid #cbbfaa;
 } 
 .box-text{
     position: absolute;
     background-color: #ff9c00;
     color: #ffffff;
     z-index: 100;
-    bottom: -15px;
-    right: -50px;
+    bottom: -30px;
+    right: -25px;
     padding: 10px;
     border-radius: 10px;
+} 
+
+/* Mobile View  */
+@media screen and (max-width:992px){
+   .services .service-items-container{
+       display: grid;
+       grid-template-columns: repeat(3, 2fr);
+       grid-gap: 0 10px;
+   }
+   .box-services{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       justify-content: space-around;
+       grid-gap: 40px  ;
+       background-color: #143258;
+       width: 100%;
+       padding: 50px 20px;
+   }
+}
+ @media screen and (max-width:688px){
+    .services .service-items-container{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-gap: 0 10px;
+    }
+    .box-services{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-around;
+        grid-gap: 20px 0px;
+        background-color: #143258;
+        width: 100%;
+        padding: 50px 20px;
+    }
 }

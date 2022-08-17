@@ -3,11 +3,11 @@ import { HashLink } from 'react-router-hash-link';
 import './Navbar.modules.css';
 
 const Navbar = () => {
-
-
+    const [show, setShow] = React.useState(false)
     return (
         <nav>
-            <ul>
+            <button onClick={() => setShow(!show)}>X</button>
+            <ul className={show ? 'show' : 'hide'}>
                 <li><HashLink to='/#'>Home</HashLink></li>
                 <li><HashLink to='/'>About Us</HashLink></li>
                 <li><HashLink to='/#services'>Services</HashLink></li>

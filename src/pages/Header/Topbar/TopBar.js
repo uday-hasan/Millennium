@@ -5,7 +5,7 @@ import './TopBar.modules.css'
 
 const TopBar = () => {
     return (
-        <section>
+        <section className='top'>
             <section className="top-bar">
                 <div><FaUserGraduate /></div>
                 <div>

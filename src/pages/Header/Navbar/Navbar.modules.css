@@ -24,5 +24,46 @@ nav ul li a:hover {
     text-decoration: underline;
     text-decoration-color:#048bfc ;
     /* background-color: #048bfe; */
-    /* border-bottom: 5px solid #ffffff; */
+}
+
+nav > button {
+    position: absolute;
+    padding: 5px;
+    z-index: 1;
+    display: none;
+}
+
+/* Responsive View */
+@media screen and (max-width:992px) {
+nav{
+    padding: 20px;
+}
+    nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        transition: all 0.3s;
+        width: 30%;
+        padding: 10px;
+        top: 0;
+    }
+    nav ul li{
+        margin: 5px 0;
+    }
+    nav > button{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .show{
+        left: 40px;
+    }
+    .hide{
+        left: -500px;
+    }
 }
